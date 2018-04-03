@@ -55,6 +55,83 @@ SELECT column1, column2, ...
 FROM table_name
 WHERE NOT condition;
 
+#SQL Order by
+SELECT column1, column2, ...
+FROM table_name
+ORDER BY column1, column2, ... ASC|DESC;
+
+SELECT * FROM Customers
+ORDER BY Country;
+
+SELECT * FROM Customers
+ORDER BY Country DESC;
+
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+#SQL Insert Into
+INSERT INTO table_name (column1, column2, column3, ...)
+VALUES (value1, value2, value3, ...);
+
+INSERT INTO table_name
+VALUES (value1, value2, value3, ...);
+
+#SQL NULL Value
+
+SELECT column_names
+FROM table_name
+WHERE column_name IS NULL;
+
+SELECT column_names
+FROM table_name
+WHERE column_name IS NOT NULL;
+
+SELECT LastName, FirstName, Address FROM Persons
+WHERE Address IS NULL;
+
+#SQL Update Statement
+UPDATE table_name
+SET column1 = value1, column2 = value2, ...
+WHERE condition;
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+
+UPDATE Customers
+SET ContactName = 'Alfred Schmidt', City= 'Frankfurt'
+WHERE CustomerID = 1;
+
+UPDATE Customers
+SET ContactName='Juan'
+WHERE Country='Mexico';
+
+UPDATE Customers
+SET ContactName='Juan';
+
+#Delete Syntax
+DELETE FROM table_name
+WHERE condition;
+
+DELETE FROM Customers
+WHERE CustomerName='Alfreds Futterkiste';
+
+DELETE FROM table_name;
+
+DELETE * FROM table_name;
+
+
+
+
+
+
+
+
+
+
 
 
 
