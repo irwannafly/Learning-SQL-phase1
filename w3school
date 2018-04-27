@@ -123,6 +123,7 @@ DELETE FROM table_name;
 
 DELETE * FROM table_name;
 
+#POSTPONE
 
 
 
